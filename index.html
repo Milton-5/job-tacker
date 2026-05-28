@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!--daisyui and tailwind-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-base-200 mx-auto pl-[245px] pr-[245px]">
+    <header class = "border-b-2 border-gray-200 sticky bg-white top-0  z-10">
+        <section class = " pb-[30px] items-center justify-between">
+            <div>
+            <div>
+                <h2 class = "text-[41px] font-bold pt-[60px] pb-[20px]">Job Application Tracker</h2>
+            </div>
+            <div class=" grid grid-cols-3 gap-[16px]">
+                <div class="border-2 p-[20px] bg-white border-gray-100 rounded-xl">
+                    <h1>Total</h1>
+                    <h1 id = "total-count" class="text-[24px] font-bold">8</h1>
+
+                </div>
+                <div class="border-2 p-[20px] bg-white border-gray-100 rounded-xl">
+                    <h1 >Interview</h1>
+                    <h1 id = "interview-count" class="text-[24px] font-bold text-green-500">0</h1>
+
+                </div>
+                <div class="border-2 p-[20px] bg-white border-gray-100 rounded-xl">
+                    <h1 >Reject</h1>
+                    <h1 id = "rejected-count" class="text-[24px] font-bold text-red-500">0</h1>
+
+                </div>
+                
+            </div>
+        </section>
+    </header>
+    <section class="sticky top-[280px] bg-white z-10 ">
+            <div class="pt-[35px]">
+                <h1 class="text-[22px] font-bold">Available Jobs</h1>
+                <div class="flex pt-[24px] pb-[16px]">
+                    <div class="pr-[8px]">
+                        <button id="all-jobs" class="btn btn-primary btn-soft rounded-xl">All</button>
+                    </div>
+                    <div class="pr-[8px]">
+                        <button id="interview-jobs-btn" class="btn btn-primary btn-soft  rounded-xl">Interview</button>
+                    </div>
+                    <div>
+                        <button id="rejected-jobs-btn" class="btn btn-primary btn-soft rounded-xl">Rejected</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id = "jobs-container">
+        <div id="job-1" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">Semi-conductor Solution</h6>
+            <h1>Backend Developer</h1>
+            <br>
+            <p>Remote • Internship • $25,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Work on frontend and backend development projects.</P>
+            <br>
+            <div class = "">
+                <button id="interview-btn-1" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-1" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-2" class="border-2 p-[22px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">TechNova</h6>
+            <h1>Frontend Developer</h1>
+            <br>
+            <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Develop modern UI with React and Tailwind CSS.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-2" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-2" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-3" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">CloudSync</h6>
+            <h1>Backend Engineer</h1>
+            <br>
+            <p>Remote • Contract • $80/hr</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Develop modern UI with React and Tailwind CSS.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-3" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-3" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-4" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">AI Vision</h6>
+            <h1>Machine Learning Engineer</h1>
+            <br>
+            <p>Remote • Full-time • $235,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Train and deploy AI models for real-world applications.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-4" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-4" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-5" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">TechNova</h6>
+            <h1>Frontend Developer</h1>
+            <br>
+            <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Create scalable APIs using Node.js and MongoDB.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-5" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-5" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-6" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">Pixel Studio</h6>
+            <h1>UI/UX Designer</h1>
+            <br>
+            <p>On-site • Full-time • $70,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Design user-friendly interfaces and product experiences.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-6" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-6" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-7" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">DataCore</h6>
+            <h1>Data Analyst</h1>
+            <br>
+            <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Analyze and interpret complex data to inform business decisions.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-7" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-7" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+
+        </div>
+        <div id="job-8" class="border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
+            <h6 class="font-bold">DevSphere</h6>
+            <h1>Full Stack Developer</h1>
+            <br>
+            <p>Remote • Internship • $25/hr</p>
+            <br>
+            <button class ="status-btn btn">NOT APPLIED</button>
+            <P> Work on frontend and backend development projects.</P>
+            <br>
+            <div class>
+                <button id="interview-btn-8" class="btn btn-accent btn-outline rounded-md">INTERVIEW</button>
+                <button id="rejected-btn-8" class="btn btn-secondary btn-outline rounded-md">REJECT</button>
+            </div>
+        </div>  
+    </section>
+    <script src="./script/script.js"></script>
+
+
+</body>
