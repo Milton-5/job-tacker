@@ -12,8 +12,8 @@
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +26,7 @@
 </head>
 <body class="bg-base-200 mx-auto pl-[245px] pr-[245px]">
     <header class = "border-b-2 border-gray-200 sticky bg-white top-0  z-10">
-        <section class = " pb-[30px] items-center justify-between">
+        <section class = " pb-[30px] items-center justify-between pl-[20px] pr-[20px]">
             <div>
             <div>
                 <h2 class = "text-[41px] font-bold pt-[60px] pb-[20px]">Job Application Tracker</h2>
@@ -52,7 +52,7 @@
         </section>
     </header>
     <section class="sticky top-[280px] bg-white z-10 ">
-            <div class="pt-[35px]">
+            <div class="pt-[35px] pl-[20px] pr-[20px]">
                 <h1 class="text-[22px] font-bold">Available Jobs</h1>
                 <div class="flex pt-[24px] pb-[16px]">
                     <div class="pr-[8px]">
@@ -71,10 +71,16 @@
     <section id = "jobs-container">
         <div id="job-1" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">Semi-conductor Solution</h6>
-            <div>
+            <div class="flex items-center gap-275">
                 <h1>Backend Developer</h1>
-                <button class="btn btn-ghost rounded-full">
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
                 </button>
+
             </div>
             <br>
             <p>Remote • Internship • $25,000</p>
@@ -90,7 +96,16 @@
         </div>
         <div id="job-2" class="job-card border-2 p-[22px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">TechNova</h6>
-            <h1>Frontend Developer</h1>
+            <div class="flex items-center gap-275">
+                <h1>Frontend Developer</h1>
+            <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
             <br>
@@ -103,9 +118,19 @@
             </div>
 
         </div>
+
         <div id="job-3" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">CloudSync</h6>
-            <h1>Backend Engineer</h1>
+            <div class="flex items-center gap-279">
+                <h1>Backend Engineer</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Remote • Contract • $80/hr</p>
             <br>
@@ -120,7 +145,17 @@
         </div>
         <div id="job-4" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">AI Vision</h6>
-            <h1>Machine Learning Engineer</h1>
+            
+            <div class="flex items-center gap-262">
+                <h1>Machine Learning Engineer</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Remote • Full-time • $235,000</p>
             <br>
@@ -135,7 +170,17 @@
         </div>
         <div id="job-5" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">TechNova</h6>
-            <h1>Frontend Developer</h1>
+            
+            <div class="flex items-center gap-275">
+                <h1>Frontend Developer</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
             <br>
@@ -150,7 +195,17 @@
         </div>
         <div id="job-6" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">Pixel Studio</h6>
-            <h1>UI/UX Designer</h1>
+            
+            <div class="flex items-center gap-285">
+                <h1>UI/UX Designer</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>On-site • Full-time • $70,000</p>
             <br>
@@ -165,7 +220,17 @@
         </div>
         <div id="job-7" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">DataCore</h6>
-            <h1>Data Analyst</h1>
+            
+            <div class="flex items-center gap-290">
+                <h1>Data Analyst</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Hybrid  •  Full-time  •  $90,000 - $120,000</p>
             <br>
@@ -180,7 +245,16 @@
         </div>
         <div id="job-8" class="job-card border-2 p-[20px] bg-white border-gray-100 rounded-xl mt-[16px]">
             <h6 class="font-bold">DevSphere</h6>
-            <h1>Full Stack Developer</h1>
+            <div class="flex items-center gap-275">
+                <h1>Full Stack Developer</h1>
+                <button class="btn btn-square ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+                  <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+                  </svg>
+                </button>
+            </div>
             <br>
             <p>Remote • Internship • $25/hr</p>
             <br>
