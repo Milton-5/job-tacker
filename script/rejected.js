@@ -1,5 +1,4 @@
-document.querySelectorAll(".rejected-btn")
-.forEach(button => {
+document.querySelectorAll(".rejected-btn").forEach(button => {
 
     button.addEventListener("click",function(){
 
@@ -14,16 +13,15 @@ document.querySelectorAll(".rejected-btn")
         if(statusBtn.innerText === "INTERVIEW"){
             interview--;
             setValue("interview-count",interview);
+
         }
 
         if(statusBtn.innerText !== "REJECTED"){
-
             rejected++;
             setValue("rejected-count",rejected);
-
             statusBtn.innerText = "REJECTED";
         }
-
     });
 
 }); 
+

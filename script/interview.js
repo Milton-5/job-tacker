@@ -17,10 +17,8 @@ document.querySelectorAll(".interview-btn")
         }
 
         if(statusBtn.innerText !== "INTERVIEW"){
-
             interview++;
             setValue("interview-count",interview);
-
             statusBtn.innerText = "INTERVIEW";
         }
 
